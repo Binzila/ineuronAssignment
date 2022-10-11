@@ -1,0 +1,32 @@
+public class checkVC {
+	public void cntVC(String s1){
+		char []s3=s1.toLowerCase().toCharArray();
+		char[] cons= {'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'};
+		char[] vow= {'a','e','i','o','u'};
+		int cnt=0;
+		for(int i=0;i<s3.length;i++) {
+			for(int j=0;j<vow.length;j++){
+				if(s3[i]==vow[j]) {
+					cnt++;
+				
+				}
+				}
+			}System.out.println("The count of vowel is: "+cnt);
+			
+			int cn=0;
+			for(int k=0;k<s3.length;k++) {
+				for(int l=0;l<cons.length;l++){
+					if(s3[k]==cons[l]) {
+						cn++;
+					
+					}
+					}
+				}System.out.println("The count of consonant is: "+cn);
+				
+			}
+
+public static void main(String[] args) {
+	checkVC cv= new checkVC();
+	cv.cntVC("loop");
+}
+}

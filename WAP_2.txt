@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+import javax.xml.stream.events.Characters;
+
+public class Solution {
+	
+	void wrd(String str) {
+		String w="";
+		str=str.toLowerCase();
+		str+=" ";
+		char p;
+		for(int i=0;i<str.length();i++) {
+			char c=str.charAt(i);
+			if(c!=' ') {
+				w+=c;
+				
+			}else {
+				
+			char d[]=	w.toCharArray();	
+			for(int y=0;y<w.length();y++) {
+			for(int o=w.length()-1;o>=0;o--) {
+				 p=d[o];
+				 w=""+p;
+				 System.out.print(w);
+				
+				
+			} 
+			} System.out.print(" ");
+			 w="";	
+				}
+				
+				
+				
+				
+				
+				
+			}
+		}
+		
+		
+		
+	
+	public static void main(String[] args) {
+			Solution so = new Solution();
+			so.wrd("Think twice");
+	}
+}

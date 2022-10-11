@@ -1,0 +1,31 @@
+
+public class SplCh {
+	
+	public void splChr(String s1) {
+		char[] s2=s1.toCharArray();
+		int cnt=0,mnt=0,jnt=0;
+		
+		for(int i=0;i<s2.length;i++) {
+			
+		if(Character.isDigit(s2[i])) {
+			mnt++;
+			
+		}else if(s2[i] >= 'a' && s2 [i]<= 'z' || s2[i] >= 'A' && s2[i] <= 'Z' ) {
+		
+			
+			cnt++;
+			
+		}else {
+			jnt++;
+		}
+		}System.out.println("The number of digits are :"+mnt);
+		System.out.println("The number of spcl characters are"+jnt);
+		System.out.println("The number of alphabetic letters are :"+cnt);
+		
+	}
+	
+public static void main(String[] args) {
+	SplCh sp= new SplCh();
+	sp.splChr("!1qsd");
+}
+}

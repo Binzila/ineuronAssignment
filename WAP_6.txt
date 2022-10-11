@@ -1,0 +1,23 @@
+
+public class SortCh {
+	public void sortCh(String s1) {
+		char [] c1=s1.toCharArray();
+		String str=null;
+		for(int i=0;i<c1.length;i++) {
+			for(int j=i;j<c1.length;j++) {
+		if(c1[j]<c1[i]) {
+			char temp=c1[j];
+		    c1[j]=c1[i];
+		    c1[i]=temp;
+		  
+		}
+		
+			} 
+		}System.out.println(str.valueOf(c1));
+		
+	}
+public static void main(String[] args) {
+	SortCh ch=new SortCh();
+	ch.sortCh("dcba");
+}
+}
